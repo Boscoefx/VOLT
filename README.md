@@ -23,20 +23,7 @@ VOLT is a fast, lightweight, and easy-to-use web vulnerability assessment tool b
 
 ## 🔍 Features
 
-- 🚀 **Automated vulnerability scanning** – Quickly identify security flawsd text displaying important legal warnings about:
-  - Educational and authorized security testing only
-  - Must have explicit permission to test
-  - Unauthorized scanning may be illegal
-  - Full responsibility acknowledgment
-  - User accepts all risks and consequences
-  - Software provided "AS IS" without warranty
-  - Call to use responsibly and ethically
-
-This is the **startup/welcome screen** that users see when they first run `python volt.py`. It establishes the tool's identity and critically displays the legal disclaimer before any scanning begins.
-
----
-
-Now let me update your README.md with this actual screenshot:
+- 🚀 **Automated vulnerability scanning** – Quickly identify security flaws
 - 🎯 **Multiple scan modes** – Full, limited, and fast scanning options
 - 🖥 **Interactive and CLI support** – Use via terminal or interactive mode
 - 📊 **HTML and text reports** – Detailed scan results in multiple formats
@@ -77,22 +64,7 @@ python volt.py
 
 You will be prompted for:
 - 🌐 Target URL
-- 🧪Perfect! Here's the description of **Image 1 - VOLT Terminal Startup Screen**:
-
-## 📸 Image 1 Description:
-
-This screenshot shows the **VOLT Web Vulnerability Scanner** application running in a terminal on macOS. Here's what's visible:
-
-### 🔴 Key Elements:
-
-1. **Terminal Header**
-   - User: `kali@kali`
-   - Location: `~/VOLT` directory
-   - Command executed: `python volt.py`
-
-2. **VOLT Banner** (Large Red ASCII Art)
-   - Displays the project name "VOLT" in prominent red text
-   - Creates an Scan type
+- 🧪 Scan type
 
 ### 💻 Command Line Mode
 
@@ -146,35 +118,204 @@ Examples:
 
 ![VOLT Terminal Startup](images/volt_startup.png)
 
-*VOLT initializes with its signature ASCII logo and displays legal disclaimer on startup. Shows version information (v1.00), author credit ( impressive visual impact when the tool starts
+*VOLT initializes with its signature ASCII logo and displays legal disclaimer on startup. Shows version information (v1.00), author credit (Bosco), and important security warnings.*
 
-3. **Tool Information**
-   ```
-   VOLT Web Vulnerability Scanner
-   Version      : v1.00
-   Author       : Bosco
-   ```
+**Key Information Displayed:**
+- ✅ Tool name and version
+- ✅ Author attribution
+- ✅ Legal disclaimer
+- ✅ Usage restrictions
+- ✅ Liability notice
+- ✅ Ethical usage reminder
 
-4. **Legal Disclaimer Section** (Red Text)
-   - `[!] LEGAL DISCLAIMER` header
-   - Emphasizes that VOLT is for **EDUCATIONAL and AUTHORIZED SECURITY TESTING only**
-   - Clear warnings about:
-     - Only using on owned systems or with explicit permission
-     - Unauthorized scanning being illegal
-     - User accepts full responsibility
-     - Risks and consequences on the user
-     - Software provided "AS IS" without warranty
-   - Final line: **"Use responsibly and ethically"**
+### 🔴 Interactive Mode Prompts
 
-### 💻 Visual Design:
-- Dark terminal background (black)
-- Red text for branding and warnings (high visibility)
-- Clean, professional layout
-- Important legal information displayed prominently on startup
-- Repository structure visible in the tab bar showing: `config.py`, `core`, `modules`, `__pycache__`, `report.txt`, `requirements.txt`, `volt.py`
+![VOLT Interactive Mode](images/volt_interactive.png)
 
-This is an **excellent startup screen** that immediately establishes the tool's purpose, shows professionalism, and ensures users are aware of legal and ethical requirements before using the scanner! 🔒
+*User-friendly interactive mode prompting for target URL and scan type selection.*
+
+### 🔴 Scan Results Summary
+
+![VOLT Scan Results](images/volt_results.png)
+
+*Real-time vulnerability detection with severity levels and vulnerability counts.*
+
+### 🔴 HTML Report Output
+
+![VOLT HTML Report](images/volt_report.png)
+
+*Professional HTML report with detailed vulnerability analysis, recommendations, and remediation steps.*
 
 ---
 
-Would you like me to add this screenshot to your README.md with a proper description?
+## 🗂 Reports
+
+After each scan, VOLT automatically generates comprehensive reports:
+
+| Format | Location | Description |
+|--------|----------|-------------|
+| 📝 HTML Report | `reports/report.html` | Interactive web-based report with full details |
+| 📜 Text Report | `reports/report.txt` | Plain text format for logging and archiving |
+
+### 📊 Reports Include
+
+- 📈 **Severity overview** – High, medium, and low-risk vulnerabilities
+- 🔬 **Vulnerability details** – In-depth information on each issue
+- 🛠 **Fix recommendations** – Step-by-step solutions and remediation
+- 🧾 **Clean layout** – Easy-to-read formatting and organization
+- ⏱ **Scan duration** – Time taken to complete the scan
+- 📅 **Scan timestamp** – When the scan was performed
+- 🔗 **Affected URLs** – Links to vulnerable endpoints
+
+### 👁 View Report
+
+```bash
+# View HTML report in your default browser
+firefox reports/report.html
+```
+
+or
+
+```bash
+# View text report in terminal
+cat reports/report.txt
+```
+
+---
+
+## 🧩 Technologies Used
+
+- 🐍 **Python 3.8+** – Core programming language
+- 🌐 **Requests** – HTTP library for web requests
+- 🥣 **BeautifulSoup4** – HTML/XML parsing and analysis
+- 🎨 **Colorama** – Terminal color output for better visibility
+- 📄 **HTML/CSS** – Professional report generation
+- 🔒 **SSL/TLS** – Secure HTTPS connections
+
+---
+
+## 🔮 Future Enhancements
+
+- 📑 **PDF export** – Generate PDF reports
+- 📊 **Advanced analytics** – Charts and graphs for vulnerability trends
+- 🧮 **CVSS scoring** – Industry-standard severity ratings
+- ⚙ **Multi-threading** – Parallel scanning for faster results
+- 🖼 **GUI interface** – Graphical user interface option
+- 🔌 **REST API** – API integration support
+- 🌍 **Proxy support** – Route scans through proxies
+- 🔐 **Authentication** – Support for authenticated scanning
+- 📱 **Mobile reporting** – Responsive report design
+
+---
+
+## ⚠ Legal Disclaimer
+
+### 🚨 IMPORTANT – READ BEFORE USING
+
+**VOLT is intended only for EDUCATIONAL and AUTHORIZED SECURITY TESTING.**
+
+#### ✅ Allowed Uses
+
+- Security testing on systems you own
+- Authorized penetration testing with written permission
+- Educational purposes in controlled environments
+- Personal security research
+
+#### 🚫 Prohibited Uses
+
+- Unauthorized scanning or testing of third-party websites
+- Illegal hacking or unauthorized access attempts
+- Circumventing security measures without permission
+- Using VOLT for malicious purposes
+
+### ⚖ Legal Responsibility
+
+- ✅ **You are fully responsible** for obeying all applicable cyber laws
+- ✅ **Obtain written permission** before testing any system you don't own
+- ✅ **Comply with** local, state, and federal regulations
+- ✅ **Understand the consequences** of unauthorized testing
+
+### ❗ Liability Disclaimer
+
+The author and contributors are NOT responsible for:
+
+- ❌ Illegal usage or misuse of this tool
+- ❌ Data loss or corruption
+- ❌ System damage or disruption
+- ❌ Service interruption or downtime
+- ❌ Legal consequences or prosecution
+- ❌ Financial losses
+
+🧠 **This tool is provided "AS IS" with no warranty, express or implied.**
+
+🛡 **By using VOLT, you acknowledge and accept full responsibility for your actions and agree to act ethically and legally.**
+
+---
+
+## 👨‍💻 Author
+
+**Bosco**
+
+- 🐙 GitHub: [Boscoefx](https://github.com/Boscoefx)
+- 💼 LinkedIn: [Naseeb Kanjirakkadan](https://www.linkedin.com/in/naseeb-kanjirakkadan)
+- 📧 Email: [Contact via GitHub](https://github.com/Boscoefx)
+
+---
+
+## ⭐ Support & Contribution
+
+### Show Your Support
+
+If you find this project helpful:
+
+- ⭐ **Star the repository** – Show your appreciation
+- 🤝 **Contribute** – Submit pull requests with improvements
+- 🐛 **Report bugs** – Open issues for any problems found
+- 💡 **Suggest features** – Share your ideas for enhancement
+- 📢 **Spread the word** – Tell others about VOLT
+
+### Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+### Reporting Issues
+
+When reporting bugs, please include:
+- Description of the issue
+- Steps to reproduce
+- Expected behavior
+- Actual behavior
+- Your environment (OS, Python version, etc.)
+
+---
+
+## 📝 Additional Resources
+
+- 📖 [Documentation](https://github.com/Boscoefx/VOLT/wiki)
+- 🆘 [FAQ](https://github.com/Boscoefx/VOLT/discussions)
+- 🐛 [Report Issues](https://github.com/Boscoefx/VOLT/issues)
+- 💬 [Discussions](https://github.com/Boscoefx/VOLT/discussions)
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🙏 Thank You for Using VOLT!
+
+**Happy scanning and stay secure! 🔒**
+
+*Together, let's make the web a safer place.*
+
+---
+
+*Last Updated: February 8, 2026*
+
+*Version: 1.0.0*
