@@ -1,169 +1,165 @@
-# 🔍 VOLT – Web Vulnerability Scanner
+🚀 VOLT – Web Vulnerability Assessment Tool
 
-VOLT is an automated web vulnerability scanner built in Python.  
-It is designed to help security researchers, students, and penetration testers identify common security flaws in web applications and generate structured, professional reports.
+VOLT is a lightweight and efficient web vulnerability scanning tool designed for security professionals, penetration testers, and cybersecurity enthusiasts. It helps identify common security misconfigurations and vulnerabilities in web applications through automated scanning and structured reporting.
 
----
+🔍 Features
 
-## 🚀 Overview
+✅ Automated vulnerability scanning
 
-VOLT performs automated scanning of web applications to detect vulnerabilities such as:
+🖥 Interactive and command-line modes
 
-- SQL Injection  
-- Cross-Site Scripting (XSS)  
-- CSRF Issues  
-- Open Redirects  
-- Insecure HTTP Headers  
-- Sensitive File Exposure  
-- Directory Listing  
-- IDOR (Insecure Direct Object References)  
+🎯 Multiple scan types (Full / Limited / Fast)
 
-The tool generates a detailed HTML report with severity classifications and remediation recommendations, similar to professional scanners like Nessus and Burp Suite.
+📊 Professional HTML and text-based reporting
 
----
+⚡ Easy-to-use interface
 
-## ✨ Key Features
+🛡 Clear remediation recommendations
 
-✔ Automated website crawling  
-✔ Detection of multiple vulnerability types  
-✔ Severity-based classification  
-✔ Professional HTML and text reports  
-✔ Clear remediation guidance  
-✔ Command-line interface  
-✔ Fast and full scan modes  
-✔ Beginner-friendly usage  
+🌍 Cross-platform compatibility
 
----
-
-## 🛠 Installation
-
-### Clone the repository
-
-```bash
+🛠 Installation
+📥 1. Clone the Repository
 git clone https://github.com/Boscoefx/VOLT.git
 cd VOLT
 
-
-Install Dependencies
+📦 2. Install Dependencies
 pip install -r requirements.txt
 
 📌 Usage
-Interactive Mode
-
-Run the tool without arguments:
-
+🖱 Interactive Mode
 python volt.py
 
 
 You will be prompted to enter:
 
-Target URL
+🌐 Target URL
 
-Scan mode (Full / Limited)
+🧪 Scan mode (Full / Limited)
 
-Command Line Mode
-
-Full Scan
-
+💻 Command Line Mode
+🔎 Full Scan
 python volt.py -u http://example.com
 
-
-Limited Scan
-
+🎚 Limited Scan
 python volt.py -u http://example.com -l 20
 
-
-Fast Scan
-
+⚡ Fast Scan
 python volt.py -u http://example.com -f
 
-
-Display Help Menu
-
+❓ Display Help Menu
 python volt.py --help
 
 📄 Reports
 
-After each scan, VOLT automatically generates two reports:
+After each scan, VOLT automatically generates:
 
-reports/report.html – Professional formatted security report
+🗂 Format	📍 Location
+📝 HTML Report	reports/report.html
+📜 Text Report	reports/report.txt
+📊 Report Includes
 
-reports/report.txt – Plain text findings
+📈 Severity overview table
 
-Report Includes
+🔬 Detailed vulnerability findings
 
-Severity overview table
+🛠 Remediation recommendations
 
-Detailed findings list
+🧾 Clean structured layout
 
-Remediation recommendations
+🔗 Clickable author credits
 
-Clean structured layout
-
-Clickable author credits
-
-To view the report:
-
+👁 View Report
 firefox reports/report.html
 
-⚠ Legal Disclaimer
+🧩 Technologies Used
 
-This tool is intended strictly for EDUCATIONAL and AUTHORIZED SECURITY TESTING purposes only.
+🐍 Python
 
-Use this tool ONLY on systems and websites you own or have explicit permission to test.
+🌐 Requests
 
-Unauthorized scanning or testing may be illegal in your region.
+🥣 BeautifulSoup
 
-The author and contributors are not responsible for any misuse, damage, or legal consequences caused by this tool.
+🎨 Colorama
 
-Use ethically and responsibly.
+📄 HTML / CSS Reporting
+
+🔮 Future Enhancements
+
+📑 PDF report export
+
+📊 Pie chart analytics
+
+🧮 CVSS scoring
+
+⚙ Multi-threaded scanning
+
+🖼 GUI interface
+
+🔌 API integration
+
+🛡 Advanced vulnerability modules
+
+⚠️ LEGAL DISCLAIMER – IMPORTANT
+
+🚨 PLEASE READ CAREFULLY BEFORE USING THIS TOOL
+
+📌 VOLT is intended strictly for EDUCATIONAL, RESEARCH, and AUTHORIZED SECURITY TESTING purposes only.
+
+🔐 You must use this tool ONLY on systems, networks, or websites that you OWN or have EXPLICIT WRITTEN PERMISSION to test.
+
+🚫 Scanning, probing, or testing any system without authorization may be considered illegal and unethical.
+
+⚖ The user is fully responsible for complying with all applicable local, national, and international laws regarding security testing.
+
+❗ The developer and contributors of VOLT do NOT take responsibility for:
+
+Any illegal usage
+
+Unauthorized scanning
+
+Data loss
+
+Service disruption
+
+Legal actions
+
+Damage caused directly or indirectly by this tool
+
+🧠 This tool is provided “AS IS” without warranty of any kind.
+
+🔒 By using VOLT, you agree that:
+
+You understand the risks
+
+You take full responsibility for your actions
+
+You will use it ethically and legally
+
+🛡 Always obtain proper permission before testing any target.
 
 👨‍💻 Author
 
 Bosco
 
-GitHub:
-https://github.com/Boscoefx
+🐙 GitHub: https://github.com/Boscoefx
 
-LinkedIn:
-https://www.linkedin.com/in/naseeb-kanjirakkadan
-
-🧩 Technologies Used
-
-Python
-
-Requests
-
-BeautifulSoup
-
-Colorama
-
-HTML / CSS Reporting
-
-🔮 Future Enhancements
-
-Planned upgrades for upcoming versions:
-
-PDF export support
-
-Pie chart analytics
-
-CVSS scoring
-
-Multi-threaded scanning
-
-GUI interface
-
-API integration
+💼 LinkedIn: https://www.linkedin.com/in/naseeb-kanjirakkadan
 
 ⭐ Support the Project
 
 If you found this tool useful:
 
-*Give the repository a ⭐ on GitHub
+⭐ Star the repository on GitHub
 
-*Share it with others
+📢 Share it with others
 
-*Contribute improvements
+🤝 Contribute improvements
 
-*Thank you for using VOLT!
+🐛 Report bugs
+
+💡 Suggest new features
+
+🙏 Thank You for Using VOLT!
+
+Your support helps make this project stronger and better every day! 💙
