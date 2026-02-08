@@ -1,0 +1,37 @@
+VOLTO OWASP SCANNER REPORT
+==========================
+
+===================================
+VOLTO OWASP TOP-10 SCAN REPORT
+Author  : Bosco
+Version : Test v1
+Target  : http://testphp.vulnweb.com/product.php?pic=7
+===================================
+
+[+] Crawling target...
+
+
+[+] Found 1 URLs
+
+[SCAN] http://testphp.vulnweb.com/product.php?pic=7
+  [!] Missing security headers: Content-Security-Policy, X-Frame-Options, X-Content-Type-Options
+  [+] Found 2 form(s)
+    Form #1
+      Method : POST
+      Action : http://testphp.vulnweb.com/cart.php
+        Input : price
+        Input : addcart
+    Form #2
+      Method : POST
+      Action : http://testphp.vulnweb.com/search.php?test=query
+        Input : searchFor
+        Input : goButton
+  [XSS] Testing parameters...
+  [!!] Possible XSS in parameter: pic
+  [SQLi] Testing parameters...
+  [!!] Possible SQL Injection in parameter: pic
+----------------------------------------
+
+[DONE] Scan finished successfully ✔
+Report saved to report.txt
+
